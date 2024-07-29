@@ -7,9 +7,7 @@ foe every one
   "version": "0.0.3",
   "devDependencies": {
     "@pancakeswap/aptos-swap-sdk": "workspace:*",
-    "@pancakeswap/farms": "workspace:*",
-    "@pancakeswap/chains": "workspace:*",
-    "@types/lodash": "^4.14.168",
+    "@pancakeswap/farms": "workspace:*"
     "b
   }
 }
