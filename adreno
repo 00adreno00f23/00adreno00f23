@@ -1,20 +1,4 @@
 
-------------------------------------------
- 
- 
-
----------------------------------------
-
-
------------------------------------------
-------------------------------------------------
-sed -i.bak -e "s/^bootstrap-peers *=.*/bootstrap-peers = \"$BOOTSTRAP_PEERS\"/" $HOME/.celestia-app/csed -i -e "s/^use-legacy *=.*/use-legacy = falseconfig/config.toml
-
-------------------------------------------------
-pruning_keep_recent="100" 
-pruning_interval="10"
-
-------------------------------------------------------
 sed -i -e "s/^pruning *=.*/pruning = \"custom\"/;\
 s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/;\
 s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
@@ -30,7 +14,7 @@ celestia-appd config keyring-backend test
 -------------------------------------------------------
 tee $HOME/celestia-appd.service > /dev/null <<EOF
 [Unit]
-  Description=celestia-appd Cosmos daemon
+ion=celestia-appd Cosmos daemon
   After=network-online.target
 [Service]
   User=$USER
