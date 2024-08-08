@@ -8,10 +8,6 @@ s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celes
 sed -i 's/snapshot-interval *=.*/snapshot-interval 
 ---------------------------------------------------
 
-celestia-appd config chain-id $CELESTIA_CHAI
----------------------------------------------------
-sudo mv $HOME/celestia-appd.service /etc/systemd/system/
-
 ----------------------------------------------------
 sudo systemctl daemon-reload
 sudo systemctl restart celestia-appd && journalctl -u celestia-appd -f -o cat
