@@ -8,15 +8,7 @@ s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celes
 sed -i 's/snapshot-interval *=.*/snapshot-interval 
 ---------------------------------------------------
 
-celestia-appd config chain-id $CELESTIA_CHAIN
-celestia-appd config keyring-backend test
-
--------------------------------------------------------
-tee $HOME/celestia-appd.service > /dev/null <<EOF
-[Unit]
-ion=celestia-appd Cosmos daemon
-پ
-
+celestia-appd config chain-id $CELESTIA_CHAI
 ---------------------------------------------------
 sudo mv $HOME/celestia-appd.service /etc/systemd/system/
 
