@@ -4,17 +4,8 @@ s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/;\
 s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
 
 --------------------------------------------
-
-sed -i 's/snapshot-interval *=.*/snapshot-interval 
----------------------------------------------------
-
-----------------------------------------------------
+---------------------------------
 sudo systemctl daemon-reload
-sudo systemctl restart celestia-appd && journalctl -u celestia-appd -f -o cat
-
-------------------------------------------------------------
-Press CTRL+C to stop the logs
-
 -------------------------------------------------------------
 
 منتظر بمانید تا گره شما اکثر بلوک ها را از زنجیره بلوکی Celestia دانلود کند
