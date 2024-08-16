@@ -4,12 +4,6 @@ sudo systemctl daemon-reload
 
 منتظر بمانید تا گره شما اکثر بلوک ها را از زنجیره بلوکی Celestia دانلود کند
 
---------------------------------------------------
-sudo systemctl restart celestia-appd && journalctl -u celestia-appd -f -o cat
-
--------------------------------------------------
-hi gm to my friend
-end line
 
 ------------------
 CELESTIA_VALOPER=$(celestia-appd keys show $CELESTIA_WALLET --bech val -a) 
