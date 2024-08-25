@@ -1,9 +1,4 @@
 
-sudo systemctl daemon-reload
----
-
-
-source $HOME/.bash_profile
 
 --------------------------------------------
 
